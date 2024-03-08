@@ -33,12 +33,55 @@
             <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
             <label for="coverLetter">Cover Letter:</label>
             <textarea id="coverLetter" name="coverLetter" rows="4" required></textarea>
+            <h2>1.3 Education</h2>
+            <label for="educationLevel">Highest Level of Education Attained:</label>
+            <input type="text" id="educationLevel" name="educationLevel">
+            <label for="schoolName">Name of School/University:</label>
+            <input type="text" id="schoolName" name="schoolName">
+            <label for="major">Major/Area of Study:</label>
+            <input type="text" id="major" name="major">
+            <label for="graduationYear">Graduation Year:</label>
+            <input type="text" id="graduationYear" name="graduationYear">
+            <h2>1.4 Employment History</h2>
+            <label for="jobTitles">Previous Job Titles:</label>
+            <input type="text" id="jobTitles" name="jobTitles">
+            <label for="companyNames">Company Names:</label>
+            <input type="text" id="companyNames" name="companyNames">
+            <label for="employmentDates">Employment Dates:</label>
+            <input type="text" id="employmentDates" name="employmentDates">
+            <label for="jobResponsibilities">Job Responsibilities:</label>
+            <input type="text" id="jobResponsibilities" name="jobResponsibilities">
+            <h2>1.5 Skills</h2>
+            <label for="relevantSkills">Relevant Skills:</label>
+            <input type="text" id="relevantSkills" name="relevantSkills">
+            <label for="certifications">Certifications:</label>
+            <input type="text" id="certifications" name="certifications">
+            <h2>1.6 Availability</h2>
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" name="startDate">
+            <label for="preferredWorkSchedule">Preferred Work Schedule:</label>
+            <input type="text" id="preferredWorkSchedule" name="preferredWorkSchedule">
+            <label for="willingToRelocate">Willingness to Relocate:</label>
+            <input type="checkbox" id="willingToRelocate" name="willingToRelocate">
+            <h2>1.7 References</h2>
+            <label for="referenceName">Reference Name:</label>
+            <input type="text" id="referenceName" name="referenceName">
+            <label for="referenceContact">Reference Contact Information:</label>
+            <input type="text" id="referenceContact" name="referenceContact">
+            <label for="relationship">Relationship to Applicant:</label>
+            <input type="text" id="relationship" name="relationship">
             <h2>1.8 Additional Questions</h2>
             <label for="whyWorkHere">Why do you want to work for this company?</label>
             <textarea id="whyWorkHere" name="whyWorkHere" rows="4" required></textarea>
             <h2>1.9 Consent and Agreement</h2>
-            <label>I agree to the terms and conditions:<input type="checkbox" id="agreeTerms" name="agreeTerms" required></label>
-            <label>I acknowledge the privacy policy:<input type="checkbox" id="privacyPolicy" name="privacyPolicy" required></label>
+            <label>
+                <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                I agree to the terms and conditions
+            </label>
+            <label>
+                <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+                I acknowledge the privacy policy
+            </label>
             <button type="submit" id="submitBtn">Submit Application</button>
         </form>
         <button id="viewTableBtn" onclick="viewApplicationsAsTable()">View Applications as Table</button>
