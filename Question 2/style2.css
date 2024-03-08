@@ -1,4 +1,3 @@
-/* Basic Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -29,7 +28,6 @@ p {
     line-height: 1.5;
 }
 
-/* Navigation Menu */
 header {
     background: linear-gradient(to right, #000000, #0249b4);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -49,7 +47,7 @@ header {
 
 nav {
     float: none;
-    margin: 0; /* Reset margin to zero */
+    margin: 0;
     text-align: right;
 }
 
@@ -61,7 +59,7 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin-left: 15px; /* Adjust margin for better spacing */
+    margin-left: 15px;
 }
 
 .menu-toggle {
@@ -79,7 +77,6 @@ nav li {
     color: #007bff;
 }
 
-/* Responsiveness */
 @media (max-width: 768px) {
     .logo {
         float: none;
@@ -93,18 +90,17 @@ nav li {
 
     nav li {
         display: block;
-        margin: 10px 0; /* Adjust margin for better spacing */
-        text-align: center; /* Center the navigation items */
+        margin: 10px 0;
+        text-align: center;
     }
 
     .menu-toggle {
         display: block;
-        float: none; /* Center toggle button */
-        margin: 10px auto; /* Adjust margin for better spacing */
+        float: none;
+        margin: 10px auto;
     }
 }
 
-/* Navigation and Search Bar Styles */
 header .container {
     display: flex;
     justify-content: space-between;
@@ -124,7 +120,7 @@ nav {
 
 .search-bar input[type="text"],
 .search-bar button {
-    height: 40px; /* Set a specific height for both input and button */
+    height: 40px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -132,7 +128,7 @@ nav {
 }
 
 .search-bar input[type="text"] {
-    width: 150px; /* Adjust width as needed */
+    width: 150px;
 }
 
 .search-bar button {
@@ -141,11 +137,10 @@ nav {
     background-color: #ddd;
     border: none;
     display: flex;
-    align-items: center; /* Align icon vertically in the button */
-    padding: 0 10px; /* Adjust padding for better appearance */
+    align-items: center;
+    padding: 0 10px;
 }
 
-/* Additional Responsiveness (Optional) */
 @media (max-width: 768px) {
     header .container {
         flex-direction: column;
@@ -159,20 +154,19 @@ nav {
     }
 }
 
-/* Hero Section */
 .hero {
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent background image tiling */
-    background-size:auto; /* Cover the entire hero section */
-    color: black; /* Change text color to white for better contrast */
-    padding: 80px 0; /* Adjust padding as needed */
-    display: flex; /* Enable flexbox for alignment */
-    align-items: center; /* Center content vertically */
-    height: 100vh; /* Set hero section to full viewport height */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:auto;
+    color: black;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    height: 100vh;
   }
   
   .hero img {
-    opacity: 0.1; /* Adjust the opacity value as needed */
+    opacity: 0.1;
     transition: all 0.3s ease-in-out;
     animation: fade-in 3s ease-in-out forwards;
     border-radius: 0;
@@ -180,37 +174,33 @@ nav {
     box-shadow: none;
 }
 
-
-  
   .text-content {
     padding-right: 30px;
-    animation: slide-from-right 3s ease-in-out forwards; /* Add slide-from-right animation */
+    animation: slide-from-right 3s ease-in-out forwards;
     margin: 0 auto;
     padding: 20px;
   }
   
   .text-content h2 {
-    font-family: serif; /* Change heading font to serif for elegance */
+    font-family: serif;
     color: #000000;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Add subtle text shadow */
-    font-size: 42px; /* Adjust font size as needed */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    font-size: 42px;
     margin-bottom: 20px;
   }
   
   .text-content p {
-    font-size: 18px; /* Adjust font size as needed */
+    font-size: 18px;
     margin-bottom: 20px;
     color: #000000;
   }
 
 
   .text-content a {
-    font-size: 13px; /* Adjust font size as needed */
+    font-size: 13px;
     color: #000000;
   }
 
-
-  
   @keyframes fade-in {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -221,21 +211,17 @@ nav {
     to { transform: translateX(0); opacity: 1; }
   }
   
-  /* Responsive Image Size */
   @media (max-width: 768px) {
     .hero {
-      background-size: contain; /* Adjust background size for smaller screens */
+      background-size: contain;
     }
   }
   
-
-/* About Us Section */
 .about-us {
     padding: 80px 0;
     text-align: center;
 }
 
-/* Services Section */
 .services {
     padding: 80px 0;
     text-align: center;
@@ -270,7 +256,7 @@ nav {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    opacity: 0; /* Initially hide the overlay */
+    opacity: 0;
     transition: opacity 0.3s ease-in-out;
     text-align: center;
     color: #fff;
@@ -288,7 +274,6 @@ nav {
     color: #ddd;
 }
 
-/* Contact Section */
 .contact {
     padding: 80px 0;
     text-align: center;
@@ -323,29 +308,27 @@ textarea {
 }
 
 button[type="submit"] {
-    background-color: #00b8ff; /* Adjust button color */
+    background-color: #00b8ff;
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 button[type="submit"]:hover {
-    background-color: #0423a0; /* Adjust button hover color */
+    background-color: #0423a0;
 }
 
-/* Footer */
 footer {
-    background-image: linear-gradient(to bottom, #333 0%, #111 100%); /* Add background gradient */
+    background-image: linear-gradient(to bottom, #333 0%, #111 100%);
     color: #fff;
     padding: 20px 0;
     text-align: center;
 }
 
-/* Footer (continued) */
 .social-media {
     list-style: none;
     margin: 0;
@@ -358,28 +341,27 @@ footer {
 }
 
 .fab {
-    font-size: 24px; /* Increase social media icon size */
-    color: #ddd; /* Change social media icon color */
+    font-size: 24px;
+    color: #ddd;
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .fab:hover {
-    transform: scale(1.1); /* Zoom in slightly on hover */
-    color: #fff; /* Change social media icon color on hover */
+    transform: scale(1.1);
+    color: #fff;
 }
 
-/* Additional Styles */
-.button { /* Generic button style */
-    background-color: #00b8ff; /* Adjust button color */
+.button {
+    background-color: #00b8ff;
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .button:hover {
-    background-color: #00d2ff; /* Adjust button hover color */
+    background-color: #00d2ff;
 }
